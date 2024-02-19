@@ -21,8 +21,9 @@ Startup.ConfigureRoutes(app)
 // Establish Socket
 socketProvider.initialize(httpServer)
 
+// REVIEW comment out. Connecting to a fake database for now.
 // Connect to Atlas MongoDB
-DbConnection.connect()
+// DbConnection.connect()
 
 // Start Server
 httpServer.listen(port, () => {
